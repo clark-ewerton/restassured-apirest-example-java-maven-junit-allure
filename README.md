@@ -1,5 +1,4 @@
-# Rest-Assured Complete Basic Example
-[![Actions Status](https://github.com/eliasnogueira/restassured-complete-basic-example/workflows/Build%20and%20Test/badge.svg)](https://github.com/eliasnogueira/restassured-complete-basic-example/actions)
+# Project to demonstrate knowledge in tools such as RestAssured + Java + Junit + Maven + Allure Report
 
 Don't forget to give this project a ⭐
 
@@ -15,34 +14,21 @@ Don't forget to give this project a ⭐
 * [Do you want to help?](#do-you-want-to-help)
 
 This project was created to start the initial steps with test automation for a REST API using Rest-Assured.
-It tests the API: [combined-credit-api](https://github.com/eliasnogueira/combined-credit-api)
+It tests the API: [The API Cat](https://thecatapi.com/).
+Which is a public API REST, pretty simple to handle on and perform some requests.
 
 > :warning: **Disclaimer**
 > 
-> This project has an educational objective and does not have the best practices that could be applied
+> This project has an educational objective and does not have the best practices that could be applied.
 >
-> Some practices will help you to improve your test architecture, but the central point of this repository and 
-> demonstrate an example of running tests for API in a pipeline
-> some practices will help you to improve your test architecture, 
-> but the central point of this repository and demonstrate an example of running tests for API in a pipeline
 
 ## Required software
-* Java JDK 11+
+* Java JDK 8+
 * Maven installed and in your classpath
-* Clone/download the backend API [combined-credit-api](https://github.com/eliasnogueira/combined-credit-api)
 
 ## How to execute the tests
 You can open each test class on `src\test\java` and execute all of them, but I recommend you run it by the
-command line. It enables us to run in different test execution strategies and, also in a pipeline, that is the repo purpose.
-
-### Running the backend API
-Please, before executing any tests, run the backend API.
-After cloning this project:
-
-1. Navigate to the project folder using the Terminal / Command prompt
-2. Execute the following: `mvn spring-boot:run`
-3. Wait until you see something like this: _Application has started! Happy tests!_
-4. The API is ready and listen to all requests on `http://localhost:8088`
+command line. It enables us to run in different test execution strategies.
 
 ### Running the test suites
 
