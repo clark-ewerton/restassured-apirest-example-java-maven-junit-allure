@@ -1,0 +1,125 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "id": "LbahMJLuN",
+            "url": "https://cdn2.thecatapi.com/images/LbahMJLuN.jpg",
+            "sub_id": "clark",
+            "width": 640,
+            "height": 427,
+            "original_filename": "640px-Domestic_Cat_Face_Shot.jpg",
+            "breed_ids": "abys",
+            "pending": 0,
+            "approved": 1
+        }
+    ],
+    "required": [
+        "id",
+        "url",
+        "sub_id",
+        "width",
+        "height",
+        "original_filename",
+        "breed_ids",
+        "pending",
+        "approved"
+    ],
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "LbahMJLuN"
+            ]
+        },
+        "url": {
+            "$id": "#/properties/url",
+            "type": "string",
+            "title": "The url schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://cdn2.thecatapi.com/images/LbahMJLuN.jpg"
+            ]
+        },
+        "sub_id": {
+            "$id": "#/properties/sub_id",
+            "type": "string",
+            "title": "The sub_id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "clark"
+            ]
+        },
+        "width": {
+            "$id": "#/properties/width",
+            "type": "integer",
+            "title": "The width schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                640
+            ]
+        },
+        "height": {
+            "$id": "#/properties/height",
+            "type": "integer",
+            "title": "The height schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                427
+            ]
+        },
+        "original_filename": {
+            "$id": "#/properties/original_filename",
+            "type": "string",
+            "title": "The original_filename schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "640px-Domestic_Cat_Face_Shot.jpg"
+            ]
+        },
+        "breed_ids": {
+            "$id": "#/properties/breed_ids",
+            "type": "string",
+            "title": "The breed_ids schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "abys"
+            ]
+        },
+        "pending": {
+            "$id": "#/properties/pending",
+            "type": "integer",
+            "title": "The pending schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "approved": {
+            "$id": "#/properties/approved",
+            "type": "integer",
+            "title": "The approved schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        }
+    },
+    "additionalProperties": true
+}
