@@ -66,8 +66,6 @@ public class FavouriteFunctionalTest extends BaseAPI {
 
 			String json = gson.toJson(rootJson);
 			
-			System.err.println(json);
-			
 			/** **/
 		
 	         given().
