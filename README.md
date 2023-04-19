@@ -32,15 +32,10 @@ command line. It enables us to run in different test execution strategies.
 The test suites can be run directly by your IDE or by command line.
 If you run `mvn test` all the tests will execute because it's the regular Maven lifecycle to run all the tests.
 
+*** VERY IMPORTANT: this project was built using JUNIT4, don't try to add any extra Junit 4 as a library into your project. The project already has the library in the POM.xml.
+
 To run different suites based on the groups defined for each test you must inform the property `-Dgroups` and the group names.
 The example below shows how to run the test for each pipeline stage:
-
-| pipeline stage | command |
-|-----|---------|
-| health check tests | `mvn test -Dgroups="health"` |
-| contract tests | `mvn test -Dgroups="contract"` |
-| functional tests | `mvn test -Dgroups="functional"` |
-| e2e tests | `mvn test -Dgroups="e2e"` |
 
 ### Generating the test report
 
@@ -117,6 +112,8 @@ Base Test that sets the initial aspects to make the requests using RestAssured. 
 
 ### src/test/resources
 It has a `schemas` folder with the JSON Schemas to enable Contract Testing using Rest-Assured. Also, the properties file to easily configure the API URI.
+
+*** VERY IMPORTANT: the api key might be outdated. So needs to be generated from the website thecatapi for you to signup an generate another one.
 
 ## Libraries
 * [RestAssured](http://rest-assured.io/) library to test REST APIs
