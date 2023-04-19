@@ -47,7 +47,7 @@ public class ImagesFunctionalTest extends BaseAPI{
     	
             given().
                 spec(ImagesSpecs.initialConfiguration()).
-                multiPart("file", new File(Utils.getAbsolutePath(configuration.imagePath())), "image/jpg").
+                multiPart("file", new File(Utils.getAbsolutePath(configuration.imagePath())), "image/jpeg").
         		formParam("sub_id", ImagesDataFactory.getSubId()).
         		formParam("breed_ids", ImagesDataFactory.getBreedsId()).
         		formParam("category_ids", ImagesDataFactory.getCategorysId()).
@@ -88,6 +88,6 @@ public class ImagesFunctionalTest extends BaseAPI{
         when().
             post("/images/upload").
         then().
-            statusCode(HttpStatus.SC_INTERNAL_SERVER_ERROR);
+            statusCode(HttpStatus.SC_BAD_REQUEST);
     }
 }

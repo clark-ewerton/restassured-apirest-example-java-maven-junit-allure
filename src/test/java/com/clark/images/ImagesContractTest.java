@@ -47,7 +47,7 @@ public class ImagesContractTest extends BaseAPI {
     	
     	given().
         spec(ImagesSpecs.initialConfiguration()).
-        multiPart("file", new File(Utils.getAbsolutePath(configuration.imagePath())), "image/jpg").
+        multiPart("file", new File(Utils.getAbsolutePath(configuration.imagePath())), "image/jpeg").
 		formParam("sub_id", ImagesDataFactory.getSubId()).
 		formParam("breed_ids", ImagesDataFactory.getBreedsId()).
 		formParam("category_ids", ImagesDataFactory.getCategorysId()).
