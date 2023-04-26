@@ -12,7 +12,7 @@ Don't forget to give this project a ⭐
 
 This project was created to start the initial steps with test automation for a REST API using Rest-Assured.
 It tests the API: [The API Cat](https://thecatapi.com/).
-Which is a public API REST, pretty simple to handle on and perform some requests.
+Which is a public API REST, pretty simple to handle on and perform some requests. If for some reason the ai-key is expired, just log into the website and generate a new one using your own account.
 
 > :warning: **Disclaimer**
 > 
