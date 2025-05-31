@@ -1,4 +1,4 @@
-# Project to demonstrate knowledge in tools such as RestAssured + Java + Junit + Maven + Allure Report
+# Project to demonstrate knowledge in tools such as RestAssured + Java + Junit + Maven + Allure Reporttest
 
 Don't forget to give this project a ⭐
 
