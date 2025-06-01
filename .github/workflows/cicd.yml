@@ -7,27 +7,71 @@ on:
     branches: [ master ]
 
 jobs:
-  test:
+  run-api-tests:
+    name: Run API Tests
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v3
+    - name: Checkout código
+      uses: actions/checkout@v4
 
-      - name: Setup JDK
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
+    - name: Setup Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
 
-      - name: Build com Maven e rodar testes
-        run: mvn clean test
+    - name: Run Maven Tests
+      run: mvn clean test
 
-      - name: Gerar relatório Allure
-        run: mvn allure:report
+    - name: Upload Allure results
+      uses: actions/upload-artifact@v4
+      with:
+        name: allure-results
+        path: target/allure-results
 
-      - name: Publicar no GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./target/site/allure-maven-plugin
+  deploy-report:
+    name: Generate and Deploy Allure Report
+    if: always()
+    needs: [run-api-tests]
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout gh-pages branch
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        path: gh-pages
+      continue-on-error: true
+
+    - name: Download Allure results
+      uses: actions/download-artifact@v4
+      with:
+        name: allure-results
+        path: target/allure-results
+
+    - name: Generate Allure Report
+      uses: simple-elf/allure-report-action@master
+      id: allure-report
+      with:
+        allure_results: target/allure-results
+        gh_pages: gh-pages
+        allure_report: allure-report
+        allure_history: allure-history
+        keep_reports: 10
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: allure-history
+        publish_branch: gh-pages
+
+    - name: Post report link as status
+      uses: Sibz/github-status-action@v1
+      with:
+        authToken: ${{ secrets.GITHUB_TOKEN }}
+        context: 'Allure Report'
+        state: success
+        sha: ${{ github.event.pull_request.head.sha || github.sha }}
+        target_url: https://<seu-usuario>.github.io/<seu-repo>/${{ github.run_number }}/
