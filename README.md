@@ -1,4 +1,8 @@
-# Project to demonstrate knowledge in tools such as RestAssured + Java + Junit + Maven + Allure Reporttest
+# Project to demonstrate knowledge in tools such as RestAssured + Java + Junit 4 + Maven + + CI/CD (Github Actions and Pages) + Allure Reports
+
+[![Api CI/CD](https://github.com/clark-ewerton/restassured-apirest-example-java-maven-junit-allure/workflows/API%20Tests%20CI/badge.svg)](https://github.com/clark-ewerton/restassured-apirest-example-java-maven-junit-allure/actions/workflows/cicd.yml)
+[![Pages Status](https://img.shields.io/badge/GitHub%20Pages-Online-green)](https://clark-ewerton.github.io/restassured-apirest-example-java-maven-junit-allure/)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 Don't forget to give this project a ⭐
 
@@ -126,3 +130,30 @@ It has a `schemas` folder with the JSON Schemas to enable Contract Testing using
 * Builder
 * Request and Response Specification
 * BaseAPI
+
+## GitHub Actions CI/CD
+The workflow file `.github/workflows/cicd.yml` includes two jobs:
+
+`run-api-tests`: runs tests on a local emulator on GitHub-hosted runners using Ubuntu.
+
+`deploy-report`: generates an Allure report and publishes it to GitHub Pages.
+
+Allure results are stored as artifacts and published after every execution, regardless of test results.
+
+## Allure Reports
+After every test execution, Allure reports are generated and published to:
+
+🔗 https://clark-ewerton.github.io/restassured-apirest-example-java-maven-junit-allure/index.html
+
+## Contributing
+Contributions are welcome!
+Feel free to open issues, fork the repository, and submit pull requests.
+
+If you find this project useful, please consider giving it a star to help increase its visibility.
+
+## License
+This project is licensed under the MIT License.
+See the LICENSE file for more details.
+
+## Inspiration
+This project was inspired by this repo: https://github.com/eliasnogueira/appium-parallel-execution done by @eliasnogueira
