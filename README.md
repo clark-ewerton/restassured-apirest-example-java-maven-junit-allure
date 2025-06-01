@@ -156,4 +156,4 @@ This project is licensed under the MIT License.
 See the LICENSE file for more details.
 
 ## Inspiration
-This project was inspired by this repo: https://github.com/eliasnogueira/appium-parallel-execution done by @eliasnogueira
+This project was inspired by this repo: https://github.com/eliasnogueira/restassured-complete-basic-example done by @eliasnogueira
