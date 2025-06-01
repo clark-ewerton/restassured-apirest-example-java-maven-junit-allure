@@ -1,0 +1,57 @@
+{
+  "uid" : "f9299d7f192fd013",
+  "name" : "shouldNotFavouriteSameImageAgain",
+  "fullName" : "com.clark.favourite.FavouriteFunctionalTest.shouldNotFavouriteSameImageAgain",
+  "historyId" : "caa9cc2bf828e91c29a15f5b8c938aff",
+  "time" : {
+    "start" : 1748736013364,
+    "stop" : 1748736013719,
+    "duration" : 355
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "pkrvmf6wy0o8zjz"
+  }, {
+    "name" : "thread",
+    "value" : "2172@pkrvmf6wy0o8zjz.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.clark.favourite.FavouriteFunctionalTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.clark.favourite.FavouriteFunctionalTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldNotFavouriteSameImageAgain"
+  }, {
+    "name" : "suite",
+    "value" : "com.clark.favourite.FavouriteFunctionalTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f9299d7f192fd013.json",
+  "parameterValues" : [ ]
+}

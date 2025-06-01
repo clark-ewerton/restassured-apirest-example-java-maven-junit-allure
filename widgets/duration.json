@@ -1,0 +1,101 @@
+[ {
+  "uid" : "c1a7949db2b2d885",
+  "name" : "favouritePOSTContractOnV1",
+  "time" : {
+    "start" : 1748736013724,
+    "stop" : 1748736016472,
+    "duration" : 2748
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53fded206f3842b",
+  "name" : "imagesUploadContractOnV1",
+  "time" : {
+    "start" : 1748736016482,
+    "stop" : 1748736018508,
+    "duration" : 2026
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "19005a1c7f6ee54",
+  "name" : "healthCheck",
+  "time" : {
+    "start" : 1748736009891,
+    "stop" : 1748736010278,
+    "duration" : 387
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd5dec8339aaf53f",
+  "name" : "shouldNotUploadDogImage",
+  "time" : {
+    "start" : 1748736021143,
+    "stop" : 1748736023602,
+    "duration" : 2459
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45e3192ada6cc38f",
+  "name" : "shouldFavouriteImageWithSuccess",
+  "time" : {
+    "start" : 1748736010708,
+    "stop" : 1748736013361,
+    "duration" : 2653
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f32d01cc26141833",
+  "name" : "shouldNotUploadCatImageWithIncompleteFormData",
+  "time" : {
+    "start" : 1748736020677,
+    "stop" : 1748736021141,
+    "duration" : 464
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9299d7f192fd013",
+  "name" : "shouldNotFavouriteSameImageAgain",
+  "time" : {
+    "start" : 1748736013364,
+    "stop" : 1748736013719,
+    "duration" : 355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "41c1cb30883cb85",
+  "name" : "shouldUploadCatImage",
+  "time" : {
+    "start" : 1748736018512,
+    "stop" : 1748736020675,
+    "duration" : 2163
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "912a3ca87240927e",
+  "name" : "completeSimulation",
+  "time" : {
+    "start" : 1748735998055,
+    "stop" : 1748736009790,
+    "duration" : 11735
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "80b9f7ec040d656f",
+  "name" : "shouldNotFavouriteImageDontExist",
+  "time" : {
+    "start" : 1748736010284,
+    "stop" : 1748736010705,
+    "duration" : 421
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
