@@ -1,4 +1,4 @@
-# Project to demonstrate knowledge in tools such as RestAssured + Java + Junit 4 + Maven + + CI/CD (Github Actions and Pages) + Allure Reports
+# Project to demonstrate knowledge in tools such as RestAssured + Java + Junit 4 + Maven + CI/CD (Github Actions and Pages) + Allure Reports
 
 [![Api CI/CD](https://github.com/clark-ewerton/restassured-apirest-example-java-maven-junit-allure/workflows/API%20Tests%20CI/badge.svg)](https://github.com/clark-ewerton/restassured-apirest-example-java-maven-junit-allure/actions/workflows/cicd.yml)
 [![Pages Status](https://img.shields.io/badge/GitHub%20Pages-Online-green)](https://clark-ewerton.github.io/restassured-apirest-example-java-maven-junit-allure/)
@@ -143,7 +143,7 @@ Allure results are stored as artifacts and published after every execution, rega
 ## Allure Reports
 After every test execution, Allure reports are generated and published to:
 
-🔗 https://clark-ewerton.github.io/restassured-apirest-example-java-maven-junit-allure/index.html
+🔗 https://clark-ewerton.github.io/restassured-apirest-example-java-maven-junit-allure
 
 ## Contributing
 Contributions are welcome!
